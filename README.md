@@ -55,27 +55,5 @@
 
 		}
 
-
-
-  
- 	 void dfs2(int indexNode)  
- 	 {
-    state[indexNode] = 1; // 1 -> active
-    
-    dfs_number[indexNode] = dfs_counter;
-    dfs_counter++;
-    
-    for (int i = 0; i < _NumberVertics; i++)
-    {
-      if (LG[indexNode].at(i))
-      {
-        if (state[i] == 0)
-          dfs(i);
-      }
-      state[indexNode] = 2;// 2 -> finiched
-      finish_number[indexNode] = finish_counter;
-      finish_counter++;
-
-    }
-  }
+  	}
 	
